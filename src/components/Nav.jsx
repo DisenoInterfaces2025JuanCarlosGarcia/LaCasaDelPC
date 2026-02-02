@@ -57,7 +57,7 @@ function Nav() {
                             <NavLink to="/inicio" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Inicio</NavLink>
                             <NavLink to="/catalogo" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Catalogo</NavLink>
                             {/* <NavLink to="/articuloDescripcion" onClick={() => setOpen(false)} className="px-3 py-2 rounded hover:bg-gray-700 transition">ArticuloDescripcion</NavLink> */}
-                            <NavLink to="/home" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Home</NavLink>
+
                             <NavLink to="/admin" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Admin</NavLink>
                             <NavLink to="/login" onClick={() => setOpen(false)} className="px-3 py-2 rounded transition hover:[background-color:rgba(226,185,59,1)]">Login</NavLink>
                         </div>

@@ -2,7 +2,7 @@ import { Route, Routes, Navigate } from "react-router-dom"
 import Contenedor from "./Contenedor"
 import Inicio from "../pages/inicio.jsx"
 import ArticuloDescripcion from "./ArticuloDescripcion.jsx"
-import Home from "../pages/Home.jsx"
+
 import Catalogo from "../pages/Catalogo.jsx"
 import Admin from "../pages/Admin"
 import Login from "../pages/Login.jsx";
@@ -31,8 +31,7 @@ function Routers() {
     return (
         <Routes>
             <Route element={<Contenedor />}>
-                <Route path="/" element={<Home />} />
-                <Route path="/home" element={<Home />} />
+                <Route path="/" element={<Navigate to="/inicio" replace />} />
                 <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />
                 <Route path="/inicio" element={<Inicio />} />
                 <Route path="/catalogo" element={<Catalogo />} />
