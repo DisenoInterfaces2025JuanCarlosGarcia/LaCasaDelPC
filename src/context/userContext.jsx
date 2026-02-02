@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 
 const UserContext = createContext();
 
@@ -6,23 +6,14 @@ export const UserProvider = ({ children }) => {
     // Estado para el login del usuario
     const [userLogged, setUserLogged] = useState(false);
 
-    useEffect(() => {
-        const stored = localStorage.getItem("userLogged");
-        if (stored === "true") {
-            setUserLogged(true);
-        }
-    }, []);
-
     // Función para hacer login (simulado)
     const login = () => {
         setUserLogged(true);
-        localStorage.setItem("userLogged", "true");
     };
 
     // Función para hacer logout
     const logout = () => {
         setUserLogged(false);
-        localStorage.removeItem("userLogged");
     };
 
     return (
