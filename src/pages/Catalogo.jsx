@@ -46,7 +46,7 @@ function Catalogo() {
           placeholder="Buscar artículos..."
         />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full">
           {articulos.map((item) => (
             <Link key={item.id} to={`/catalogo/${item.id}`}>
               <Articulo {...item} onDelete={refetch} />

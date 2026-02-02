@@ -32,7 +32,7 @@ function Nav() {
                     <img
                         src={Logo}
                         alt="Logo de la empresa La Casa Del PC"
-                        className="h-25 absolute left-4 top-1/2 -translate-y-1/2 md:left-4"
+                        className="h-25 absolute left-4 top-1/2 -translate-y-1/2 md:left-4 hidden md:block"
                     />
 
                     {/* Título centrado */}
