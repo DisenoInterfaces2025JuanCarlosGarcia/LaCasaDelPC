@@ -85,8 +85,8 @@ function SearchBar({ searchTerm, onSearchChange, placeholder = "Buscar..." }) {
                     value={searchTerm}
                     onChange={(e) => onSearchChange(e.target.value)}
                     className={`w-full p-3 pr-12 border-2 rounded-lg shadow-inner focus:outline-none focus:ring-2 transition duration-150 ease-in-out ${isListening
-                            ? "border-red-500 ring-2 ring-red-200 animate-pulse"
-                            : "border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+                        ? "border-red-500 ring-2 ring-red-200 animate-pulse"
+                        : "border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                         }`}
                     aria-label={placeholder}
                 />
@@ -96,10 +96,10 @@ function SearchBar({ searchTerm, onSearchChange, placeholder = "Buscar..." }) {
                     disabled={!hasSupport}
                     onClick={isListening ? stopListening : startListening}
                     className={`absolute right-2 p-2 rounded-full transition-colors ${!hasSupport
-                            ? "opacity-30 cursor-not-allowed text-gray-400"
-                            : isListening
-                                ? "bg-red-500 text-white animate-bounce"
-                                : "bg-gray-100 text-gray-500 hover:bg-gray-200"
+                        ? "opacity-30 cursor-not-allowed text-gray-400"
+                        : isListening
+                            ? "bg-red-500 text-white animate-bounce"
+                            : "bg-gray-100 text-gray-500 hover:bg-gray-200"
                         }`}
                     title={
                         !hasSupport
@@ -131,7 +131,7 @@ function SearchBar({ searchTerm, onSearchChange, placeholder = "Buscar..." }) {
 
             {hasSupport && swipeMessage && !isListening && (
                 <p className="text-center text-xs text-blue-500 mt-2 animate-pulse font-medium">
-                    Desliza → para buscar por voz
+                    Pulsa el icono para buscar por voz
                 </p>
             )}
 
